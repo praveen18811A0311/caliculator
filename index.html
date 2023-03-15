@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<style>
+    body{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(15, 1, 11, 0.877),rgba(204, 46, 151, 0.877));
+       
+    }
+    #container{
+        position: relative;
+        left: 35%;
+        top: 100px;
+        background-color: rgb(131, 97, 125);
+        width: 400px;
+        height: 400px;
+        box-shadow: 5px 5px 10px black, -5px -5px 10px black;
+        border-radius: 2%;
+    }
+    #answer{
+        width: 80%;
+        height: 40px;
+        position: absolute;
+        left: 10%;
+        top: 30px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px black;
+        border: none;
+        font-size: 24px;
+    }
+    .a{
+        width: 14%;
+        height: 9%;
+        font-size: 24px;
+        background-color: rgb(83, 5, 60);
+        color: white;
+        border: none;
+        border-radius: 10px;
+    }
+    #sub{
+        width: 100%;
+        height: 70vh;
+        position: absolute;
+        top: 100px;
+        justify-content:flex-start;
+        align-items: center;
+    }
+    #a2{
+        width: 32%;
+        height: 8%;
+        font-size: 24px; 
+        position: absolute;
+        top: 240px;
+        left: 15%;
+    }
+    #a1{
+        width: 32%;
+        height: 8%;
+        font-size: 24px; 
+        position: absolute;
+        top: 240px;
+        left: 55%;
+    }
+    #i1{
+        position: absolute;
+        left: 12%;
+    }
+    #i2{
+        position: absolute;
+        left: 33%;
+    }
+    #i3{
+        position: absolute;
+        left: 54%;
+    }
+    #i4{
+        position: absolute;
+        left: 75%;
+    }
+    #l1{
+        position: absolute;
+        left: 12%;
+        top: 60px;
+    }
+    #l2{
+        position: absolute;
+        left: 33%;
+        top: 60px;
+    }
+    #l3{
+        position: absolute;
+        left: 54%;
+        top: 60px;
+    }
+    #l4{
+        position: absolute;
+        left: 75%;
+        top: 60px;
+    }
+    #k1{
+        position: absolute;
+        left: 12%;
+        top: 120px;
+    }
+    #k2{
+        position: absolute;
+        left: 33%;
+        top: 120px;
+    }
+    #k3{
+        position: absolute;
+        left: 54%;
+        top: 120px;
+    }
+    #k4{
+        position: absolute;
+        left: 75%;
+        top: 120px;
+    }
+    #j1{
+        position: absolute;
+        left: 12%;
+        top: 180px;
+    }
+    #j2{
+        position: absolute;
+        left: 33%;
+        top: 180px;
+    }
+    #j3{
+        position: absolute;
+        left: 54%;
+        top: 180px;
+    }
+    #j4{
+        position: absolute;
+        left: 75%;
+        top: 180px;
+    }
+</style>
+<body>
+    <div id="container">
+        
+        <form name="cform">
+            <input id="answer" type="text" name="answer">
+            <br><br>
+            <div id="sub">
+            <input id="i1" class="a" type="button" value="1" onclick="cform.answer.value +='1'">
+            <input id="i2" class="a" type="button" value="2" onclick="cform.answer.value +='2'">
+            <input id="i3" class="a" type="button" value="3" onclick="cform.answer.value +='3'">
+            <input id="i4" class="a" type="button" value="+" onclick="cform.answer.value +='+'">
+            <br><br>
+            <input id="l1" class="a" type="button" value="4" onclick="cform.answer.value +='4'">
+            <input id="l2" class="a" type="button" value="5" onclick="cform.answer.value +='5'">
+            <input id="l3" class="a" type="button" value="6" onclick="cform.answer.value +='6'">
+            <input id="l4" class="a" type="button" value="-" onclick="cform.answer.value +='-'">
+            <br><br>
+            <input id="k1" class="a" type="button" value="7" onclick="cform.answer.value +='7'">
+            <input id="k2" class="a" type="button" value="8" onclick="cform.answer.value +='8'">
+            <input id="k3" class="a" type="button" value="9" onclick="cform.answer.value +='9'">
+            <input id="k4" class="a" type="button" value="*" onclick="cform.answer.value +='*'">
+            <br><br>
+            <input id="j1" class="a" type="button" value="/" onclick="cform.answer.value +='/'">
+            <input id="j2" class="a" type="button" value="0" onclick="cform.answer.value +='0'">
+            <input id="j3" class="a" type="button" value="." onclick="cform.answer.value +='.'">
+            <input id="j4" class="a" type="button" value="%" onclick="cform.answer.value +='%'">
+            <br><br>
+            <input id="a2" class="a" type="button" value="Clear" onclick="cform.answer.value =' '">
+            <input id="a1" class="a" type="button" value="=" onclick="cform.answer.value =eval(cform.answer.value)">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
